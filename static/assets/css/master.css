@@ -110,6 +110,9 @@ h1 img, h2 img, h3 img,
 h4 img, h5 img, h6 img {
   margin: 0;
 }
+ul {
+  list-style-position: inside; 
+}
 
 /* Lists */
 /*
@@ -315,6 +318,49 @@ header h1 {
       top: 1px;
     }
 
+
+
+
+.single.slider_container {
+  /*width: 91.914893617021%;*/ /* 864 / 940 */ /* 880 - 14 - 2*/
+  margin: 0 auto 42px auto; /* 30 / 940*/
+  background: #fff9f2 url(../img/pattern_light.jpg) repeat;
+  border: 1px solid #ccc3b2; 
+  padding: 0.795454545455%; /* 7 / 880 */
+}
+
+/* CAPTION */
+.single .flex-caption {
+  background: red !important;
+  width: 32.407407407407%; /* 294 - 14 */ /* 280 / 864 */
+ /* height: 94.544013191274%;*/ /* 268 - 14*/ /* 251 / 864*/
+  padding: 0.810185185185%; /* 7 / 864 */
+  position: absolute; 
+  right: 0; 
+  top: 0; 
+  margin: 0 12.152777777778% 0 0; /* 105 / 864 */
+  background: #000; 
+  background: rgba(0,0,0,.5); 
+  color: #fff; 
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+}
+
+  .single .flex-caption h3 {
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-size: 26px;
+    margin: 4.761904761905% 0; /* 14 / 294 */
+    color: #8cbde6; 
+  }
+
+  .single .flex-caption p {
+    margin: 0 0 4.761904761905% 0; /* 14 / 294 */
+  }
+
+
+
+
+
 /* Direction Nav */
 .flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../img/slider/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;} /* set negative margin-top equal to half the height on the directional-nav for perfect vertical centering */
 .flex-direction-nav li a.next {background-position: -52px 0; right: -16px;}
@@ -487,12 +533,12 @@ cite {
     META
     ------------------------------------------------------------ */
 .meta {
-  background: #766850 url(../img/pattern_light.jpg) repeat;
+  background: #fdf9e7 url(../img/pattern_light.jpg) repeat;
   padding: 21px 0;
   border-top: 1px solid #ccc3b2;
   margin: 63px 0 0 0;
 }
-.meta .icon {
+.icon {
     padding: 0 0 0 30px;
     background: transparent url(../img/meta_icons.png) no-repeat;
     display: block;
@@ -506,24 +552,26 @@ cite {
   .meta .fb { background-position: 0 -21px;  margin: 0 0 21px 0; }
   .meta .fb:hover { background-position: 0 -105px; }
   /* TEL */
-  .meta .tel { background-position: 0 -63px; margin: 21px 0 0 0; }
-  .meta .tel:hover { background-position: 0 -147px; }
+  .tel { background-position: 0 -63px; margin: 21px 0 0 0; }
+  .tel:hover { background-position: 0 -147px; }
   /* EMAIL */
-  .meta .email { background-position: 0 -42px; }
-  .meta .email:hover { background-position: 0 -126px; }
-
-  /*  
-  .meta .icon:before {
-    content: " ";
-    display: block;
-    background: red;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    margin: 0 10px 0 0;
-  }
-  */
-
+  .email { background-position: 0 -42px; }
+  .email:hover { background-position: 0 -126px; }
+    .email a,
+    .email a:link,
+    .email a:visited {
+      text-decoration: none;
+      color: #766953;
+    }
+    .email a:hover,
+    .email a:focus {
+      border-bottom: 1px solid #766953;
+    }
+    .email a:active {
+      border-bottom: 1px solid #766953;
+      position: relative;
+      top: 1px;
+    }
 
 /* LINKS */ 
 .meta a,
@@ -647,7 +695,9 @@ input[type="submit"]{
   margin: 42px 0 21px 0 ;
   background: #ccc3b2;
 }
-
+  .single .map iframe {
+    margin-top: 0 ;
+  }
 /* Drop shadow */
 .map iframe:before {
   z-index: -2;
@@ -728,9 +778,45 @@ input[type="submit"]{
 
 /* Page specific - based on the <body> class
 -------------------------------------------------------------- */
+/* HOME
+********/
 .home {
   /* These styles are only applied to the homepage */
 }
+
+/* SINGLE
+**********/
+/* SUMMARY */
+.single .summary h4 {
+  font-family: Georgia, Times, serif;
+  color: #4978bc;
+  font-style: italic;
+  margin-top: -7px;
+}
+.single .summary h5 {
+  color: #4978bc;
+}
+  /* SUMMARY > CONTACT */
+  .single .contact {
+    background: rgba(255, 0, 0, .3);
+    margin-top: 28px;
+    padding: 21px;
+    background: url("../img/pattern_light.jpg") repeat scroll 0 0 #fdf9e7;
+    border: 1px solid #CCC3B2;
+  }
+    .single .share {
+      background: rgba(255, 0, 0, .1);
+      display: block;
+      margin-top: 14px;
+    }
+
+/* BLOCKS */
+.single .extra_info,
+.single .list {
+  padding-top: 56px;
+}
+
+
 
 
 
