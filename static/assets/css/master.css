@@ -30,6 +30,7 @@ a img { border: none; }
 .right { float: right; }
 .border { border: 1px solid red; }
 .ir { text-indent: -9999px;}
+.clear { overflow: hidden; background: yellow;}
 
 /* Clearfix */
 .cf: before, 
@@ -317,45 +318,6 @@ header h1 {
       position: relative;
       top: 1px;
     }
-
-
-
-
-.single.slider_container {
-  /*width: 91.914893617021%;*/ /* 864 / 940 */ /* 880 - 14 - 2*/
-  margin: 0 auto 42px auto; /* 30 / 940*/
-  background: #fff9f2 url(../img/pattern_light.jpg) repeat;
-  border: 1px solid #ccc3b2; 
-  padding: 0.795454545455%; /* 7 / 880 */
-}
-
-/* CAPTION */
-.single .flex-caption {
-  background: red !important;
-  width: 32.407407407407%; /* 294 - 14 */ /* 280 / 864 */
- /* height: 94.544013191274%;*/ /* 268 - 14*/ /* 251 / 864*/
-  padding: 0.810185185185%; /* 7 / 864 */
-  position: absolute; 
-  right: 0; 
-  top: 0; 
-  margin: 0 12.152777777778% 0 0; /* 105 / 864 */
-  background: #000; 
-  background: rgba(0,0,0,.5); 
-  color: #fff; 
-  text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
-}
-
-  .single .flex-caption h3 {
-    font-family: 'Lobster Two', cursive;
-    font-style: italic;
-    font-size: 26px;
-    margin: 4.761904761905% 0; /* 14 / 294 */
-    color: #8cbde6; 
-  }
-
-  .single .flex-caption p {
-    margin: 0 0 4.761904761905% 0; /* 14 / 294 */
-  }
 
 
 
@@ -786,6 +748,11 @@ input[type="submit"]{
 
 /* SINGLE
 **********/
+/* QUICKNAV */
+.quicknav_container {
+  margin-bottom: 20px;
+}
+
 /* SUMMARY */
 .single .summary h4 {
   font-family: Georgia, Times, serif;
@@ -803,18 +770,64 @@ input[type="submit"]{
     padding: 21px;
     background: url("../img/pattern_light.jpg") repeat scroll 0 0 #fdf9e7;
     border: 1px solid #CCC3B2;
+    position: relative;
   }
     .single .share {
       background: rgba(255, 0, 0, .1);
       display: block;
       margin-top: 14px;
     }
+      .single .contact:before {
+        content: url("../img/summary_contact_triangle.png");
+        position: absolute;
+        top: -18px;
+        left: 23.666666666667%; /* 71 / 300 / */
+      }
 
 /* BLOCKS */
 .single .extra_info,
 .single .list {
-  padding-top: 56px;
+  padding-top: 63px;
 }
+
+.single .slider_container {;
+  padding: 0.967741935484%; /* 6 / 620 */
+  width: 97.741935483871%;
+}
+
+.single.slider_container {
+  /*width: 91.914893617021%;*/ /* 864 / 940 */ /* 880 - 14 - 2*/
+  margin: 0 auto 42px auto; /* 30 / 940*/
+  background: #fff9f2 url(../img/pattern_light.jpg) repeat;
+  border: 1px solid #ccc3b2; 
+  padding: 0.795454545455%; /* 7 / 880 */
+}
+
+/* CAPTION */
+.single .flex-caption {
+  width: 85px; /* 125 - 40 */
+  height: 100px;
+  padding: 10px 20px;
+  position: absolute; 
+  right: 11.551155115512%; /* 70 / 606 */
+  top: 0; 
+  margin: 0;
+  background: transparent url(../img/single_flex_caption_bg.png) no-repeat top left;
+  color: #fff; 
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3); 
+}
+  .single .flex-caption h3 {
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-size: 26px;
+    margin: 4.761904761905% 0; /* 14 / 294 */
+    color: #8cbde6; 
+  }
+  .single .flex-caption p {
+    font-size: 18px;
+    margin: 0 0 4.761904761905% 0; /* 14 / 294 */
+  }
+
 
 
 
@@ -826,8 +839,17 @@ input[type="submit"]{
 /* @iPhone < 480px - One column fluid
 -------------------------------------------------------------- */
 @media screen and (max-width: 480px) {
-  
-
+  /* CAPTION */
+  .single .flex-caption {
+    width: 75px;
+    padding: 5px 10px;
+  }
+    .single .flex-caption h3 {
+      font-size: 22px;
+    }
+    .single .flex-caption p {
+      font-size: 16px;
+    }
 
   /* FOOTER */
   .legal span{
@@ -896,20 +918,36 @@ input[type="submit"]{
     text-align: center;
   }
   
-
-  .address, .contact_info {
-    float: left;
+  .kantoor {
+    overflow: hidden;
   }
-  .address {
-    width: 45%;
-  }
-  .contact_info {
-    width: 55%;
-  }
-    .meta .tel {
-      margin: 0;
+    .address, .contact_info {
+      float: left;
     }
-}
+    .address {
+      width: 45%;
+    }
+    .contact_info {
+      width: 55%;
+    }
+      .meta .tel {
+        margin: 0;
+      }
+
+  /* SINGLE
+  **********/
+
+  /* SUMMARY > CONTACT */
+  .single .contact:before {
+    left: 15%;
+  }
+
+  .single .extra_info,
+  .single .list {
+    padding-top: 0;
+  }
+
+}/* END MEDIAQUERY */
 
 
 
@@ -918,41 +956,57 @@ input[type="submit"]{
 @media screen and (max-width: 860px) {
 
   /* CAPTION */
-  .flex-caption {
+  .home .flex-caption {
     width: 44.560185185185%; /* (280 + 105) / 864 */
     margin: 0; /* 105 */ 
   }
-
-    .flex-caption h3 {
+    .home .flex-caption h3 {
       font-size: 26px;
       margin: 2.380952380952% 0; /* 7 / 294 */
     }
-
-    .flex-caption p {
+    .home .flex-caption p {
       margin: 0 0 4.761904761905% 0; /* 14 / 294 */
     }
 
-}
+}/* END MEDIAQUERY */
 
 /* 740px
 -------------------------------------------------------------- */
 @media screen and (max-width: 740px) {
 
   /* CAPTION */
-  .flex-caption {
+  .home .flex-caption {
     width: 60%;
   }
-
-    .flex-caption h3 {
+    .home .flex-caption h3 {
       font-size: 22px;
       margin: 2.380952380952% 0; /* 7 / 294 */
     }
-
-    .flex-caption p {
+    .home .flex-caption p {
       margin: 0 0 2.380952380952% 0; /* 7 / 294 */
     }
 
-}
+}/* END MEDIAQUERY */
+
+/* 640-740
+-------------------------------------------------------------- */
+@media screen and (min-width: 640px) and (max-width: 740px) {
+
+ /* SINGLE
+  **********/
+
+  /* SUMMARY > CONTACT */
+  .single .contact:before {
+    left: 15%;
+  }
+  .contact .icon {
+      padding-left: 0;
+      background: none;
+      display: block;
+  }
+
+}/* END MEDIAQUERY */
+
 
 /* 720px
 -------------------------------------------------------------- */
@@ -963,35 +1017,35 @@ input[type="submit"]{
     display: none;
   }
 
-}
+}/* END MEDIAQUERY */
 
 /* 680px
 -------------------------------------------------------------- */
 @media screen and (max-width: 680px) {
 
   /* CAPTION */
-  .flex-caption {
+  .home .flex-caption {
     width: 60%;
   }
-    .flex-caption h3 {
+    .home .flex-caption h3 {
       font-size: 32px;
     }
-    .flex-caption p {
+    .home .flex-caption p {
       display: none;
     }
 
-}
+}/* END MEDIAQUERY */
 
 /* 500px
 -------------------------------------------------------------- */
 @media screen and (max-width: 500px) {
 
   /* CAPTION */
-  .flex-caption {
+  .home .flex-caption {
     display: none;
   }
 
-}
+}/* END MEDIAQUERY */
 
 /*  PRINT 
     ===========================================================  */

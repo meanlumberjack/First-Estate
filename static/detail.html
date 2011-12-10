@@ -25,7 +25,15 @@
 </head>
 
 <body class="single">
-
+  <!--  FACEBOOK SDK -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- HEADER -->  
   <header>
@@ -61,11 +69,18 @@
     </div><!-- .nav_container -->
   </header>
   
+  <!-- QUICKNAV -->
+  <div class="container quicknav_container">
+    <nav role="navigation" class="grid_3 quicknav">
+      <a href="#" class="right" title="Volgend pand">Volgend pand</a>
+      <a href="#" class="left" title="Vorig pand">Vorig pand</a>
+    </nav><!-- .quicknav -->
+  </div><!-- .container -->
  
-  <section id="content">
+   <section id="content">
     <div class="container">
       
-<section class="cf" style="overflow: hidden; background: rgba(255, 255, 0, .3);">
+    <section class="cf clear">
       <div class="grid_1 summary">
         <h3>Elegant appartement met 3 slaapkamers</h3>
         <h4>Drie Eikenstraat 73, Edegem</h4>
@@ -81,11 +96,12 @@
         </ul>
         <div class="contact">
           <h5>Contacteer ons voor een afspraak</h5>
-              <span class="tel icon">+32 475 71 50 10</span>
-              <span class="email icon"><a href="mailto:alain@first-estate.be">alain@first-estate.be</a></span>
-              <span class="share">Share:</span>
-        </div>
-      </div>
+            <span class="tel icon">+32 475 71 50 10</span>
+            <span class="email icon"><a href="mailto:alain@first-estate.be">alain@first-estate.be</a></span>
+            <span class="share">Share:</span>
+            <div class="fb-send" data-href="http://www.first-estate.be"></div>
+        </div><!-- .contact -->
+      </div><!-- .summary -->
 
 <!-- SLIDER -->
       <div class="grid_2">
@@ -123,18 +139,19 @@
           </div><!-- .iframe_container -->
         </div>
         <div class="grid_1 extra_info">
-          <p>non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores <a href="#">legere me lius</a> quod ii legunt saepius. facit eorum claritatem.</p>
-          <p>non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores <a href="#">legere me lius</a> quod ii legunt saepius. facit eorum claritatem.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tempus erat id velit aliquam sit amet rhoncus urna feugiat. Non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores <a href="#">legere me lius</a> quod ii legunt saepius. facit eorum claritatem.</p>
+          <p>Facit eorum claritatem. Investigationes demonstraverunt lectores <a href="#">legere me lius</a> quod ii legunt saepius. facit eorum claritatem.</p>
         </div>
         <div class="grid_1 list">
           <ul>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
-            <li>xxx</li>
+            <li>3 slaapkamers</li>
+            <li>Gelegen in een residentiële wijk</li>
+            <li>Badkamer met ligbad</li>
+            <li>Groot terras met zuiderzon</li>
+            <li>Open keuken</li>
+            <li>Dubbele beglazing</li>
+            <li>Fietsenstalling</li>
+            <li>96m<sup>2</sup></li>
           </ul>
         </div>
       </section>
