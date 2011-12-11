@@ -271,7 +271,8 @@ header h1 {
 .flex-caption {
   width: 32.407407407407%; /* 294 - 14 */ /* 280 / 864 */
   height: 94.544013191274%; /* 268 - 14*/ /* 251 / 864*/
-  padding: 0.810185185185%; /* 7 / 864 */
+  /*padding: 0.810185185185%;*/ /* 7 / 864 */
+  padding: 0.810185185185% 2.430555555556%; /* 14 / 864 */
   position: absolute; 
   right: 0; 
   top: 0; 
@@ -285,9 +286,10 @@ header h1 {
   .flex-caption h3 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
-    font-size: 26px;
+    font-size: 24px;
     margin: 4.761904761905% 0; /* 14 / 294 */
     color: #8cbde6; 
+    text-shadow: 0 1px 1px rgba(35, 35, 115, 1); 
   }
 
   .flex-caption p {
@@ -1118,10 +1120,12 @@ input[type="submit"]{
     width: 60%;
   }
     .home .flex-caption h3 {
-      font-size: 32px;
+      font-size: 24px;
+      line-height: 24px;
+      margin: none;
     }
     .home .flex-caption p {
-      display: none;
+      /*display: none;*/
     }
 
 }/* END MEDIAQUERY */
