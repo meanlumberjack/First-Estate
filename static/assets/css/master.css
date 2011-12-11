@@ -287,6 +287,7 @@ header h1 {
     font-family: 'Lobster Two', cursive;
     font-style: italic;
     font-size: 24px;
+    line-height: 1;
     margin: 4.761904761905% 0; /* 14 / 294 */
     color: #8cbde6; 
     text-shadow: 0 1px 1px rgba(35, 35, 115, 1); 
