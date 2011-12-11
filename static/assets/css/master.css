@@ -346,7 +346,7 @@ header h1 {
 .flex-control-nav li a.active { background-position: 0 -26px; cursor: default; }
 
 /* Drop shadow */
-.slider_container:before {
+.home .slider_container:before {
   z-index: -2;
   position: absolute;
   background: transparent;
@@ -365,7 +365,7 @@ header h1 {
   -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.slider_container:after {
+.home .slider_container:after {
   z-index: -1;
   position: absolute;
   background: transparent;
@@ -384,6 +384,43 @@ header h1 {
   -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.single .slider_container:before {
+  z-index: -2;
+  position: absolute;
+  background: transparent;
+  width: 70%;
+  height: 55%;
+  content: "";
+  left: 50px;
+  bottom: 25px;
+  
+  transform:          skew(-15deg) rotate(-5deg);
+  -webkit-transform:  skew(-15deg) rotate(-5deg);
+  -moz-transform:     skew(-15deg) rotate(-5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.single .slider_container:after {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 70%;
+  height: 55%;
+  content: "";
+  right: 50px;
+  bottom: 25px;
+  
+  transform:          skew(15deg) rotate(5deg);
+  -webkit-transform:  skew(15deg) rotate(5deg);
+  -moz-transform:     skew(15deg) rotate(5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
 
 /*  ------------------------------------------------------------
@@ -757,7 +794,7 @@ input[type="submit"]{
    SINGLE
    ********** */
 .single .main_details {
-  margin-bottom: 42px;
+  padding-bottom: 42px;
 }
 .single .slider_container {
   margin-bottom: 0;
