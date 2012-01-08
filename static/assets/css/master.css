@@ -324,9 +324,7 @@ header h1 {
       position: relative;
       top: 1px;
     }
-
-
-
+    
 
 
 /* Direction Nav */
@@ -922,9 +920,155 @@ input[type="submit"]{
   }
 
 
+/* ********** 
+   OVERVIEW
+   ********** */
+.overview .pand h3 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.overview .pand h4 {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roma", Times, serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #4978bc;
+}
+
+.pand a.btn {
+  text-decoration: none;
+  display: block;
+  width: 113px; /* 143 */
+  height: 29px; /* 40 */
+  padding: 11px 0 0 30px;
+  margin-left: 21px;
+  background: transparent url(../img/home_caption_btn.png) no-repeat;
+
+  color: rgba(255,255,255,1); 
+  color: #fff; 
+  text-shadow: 0 1px 1px rgba(35, 35, 115, 1); 
+}
+  .pand a.btn,
+  .pand a.btn:link,
+  .pand a.btn:visited {
+    background-position: 0 0;
+  }
+  .pand a.btn:hover,
+  .pand a.btn:focus {
+    background-position: 0 -40px;
+  }
+  .pand a.btn:active {
+    background-position: 0 -80px;
+    position: relative;
+    top: 1px;
+  }
+
+.pand .img_container {
+  position: relative;
+  background: #fff9f2 url(../img/pattern_light.jpg) repeat;
+  border: 1px solid #ccc3b2; 
+  padding: 2% 2% 0 2%; /* 6 / 300 */
+  margin-bottom: 21px;
+
+  transition: box-shadow .2s ease; 
+  -webkit-transition: box-shadow .2s ease; 
+  -moz-transition: box-shadow .2s ease; 
+}
+  .pand .img_container a {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    /*width: 95.333333333333%;*/ /* 286 / 300 */
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+    /* CAPTION */
+    .pand .img_container a .caption{
+      margin: 0;
+      background: transparent url(../img/overview/overview_caption_bg.png) no-repeat;
+      width: 72px; /* 92 - 20 */
+      height: 76px;
+      padding: 10px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 15%; /* 45 / 300 */
+      color: #fff; 
+      text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+      .pand .img_container a .caption h3{
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+        font-size: 21px;
+        line-height: 30px;
+        /*margin: 4.761904761905% 0;*/ /* 14 / 294 */
+        margin-bottom: 3px;
+        text-align: center;
+      }
+      .pand .img_container a .caption p {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      /* TE KOOP */
+      .koop .caption { background-position: top left; }
+      .koop .caption h3 { color: #8cbde6; }
+
+      /* TE HUUR */
+      .huur .caption { background-position: top right !important; }
+      .huur .caption h3 { color: #2a2721; text-shadow: none; }
 
 
+.pand .img_container:before {
+  z-index: -2;
+  position: absolute;
+  background: transparent;
+  width: 50%;
+  height: 50%;
+  content: "";
+  left: 45px;
+  bottom: 10px;
+  
+  transform:          skew(-15deg) rotate(-5deg);
+  -webkit-transform:  skew(-15deg) rotate(-5deg);
+  -moz-transform:     skew(-15deg) rotate(-5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+}
 
+.pand .img_container:after {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 50%;
+  height: 50%;
+  content: "";
+  right: 45px;
+  bottom: 10px;
+  
+  transform:          skew(15deg) rotate(5deg);
+  -webkit-transform:  skew(15deg) rotate(5deg);
+  -moz-transform:     skew(15deg) rotate(5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ANIMATION */
+.pand .img_container:hover { 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/*
+.pand .img_container:hover:before,
+.pand .img_container:hover:after { display: none; }
+*/
 
 /*  MEDIA QUERIES 
     ===========================================================  */

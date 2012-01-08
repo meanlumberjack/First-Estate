@@ -53,7 +53,7 @@ if ( file_exists( ABSPATH . 'wp-config.php') ) {
 	require_once( ABSPATH . '/wp-includes/functions.php' );
 	require_once( ABSPATH . '/wp-includes/plugin.php' );
 	$text_direction = /*WP_I18N_TEXT_DIRECTION*/'ltr'/*/WP_I18N_TEXT_DIRECTION*/;
-	wp_die(sprintf(/*WP_I18N_NO_CONFIG*/'Het lijkt erop dat er geen <code>wp-config.php</code> bestand aanwezig is. Dit is nodig voor we kunnen starten. Hulp nodig? <a href=\'http://codex.wordpress.org/Editing_wp-config.php\'>Je kunt het hier vinden</a>. Je kunt een <code>wp-config.php</code> bestand maken d.m.v. een web interface, maar dit werkt niet via alle server setups. De veiligste manier is het bestand handmatig te maken.</p><p><a href=\'%ssetup-config.php\' class=\'button\'>Maak een configuratie bestand</a>.'/*/WP_I18N_NO_CONFIG*/, $path), /*WP_I18N_ERROR_TITLE*/'WordPress &rsaquo; Fout'/*/WP_I18N_ERROR_TITLE*/, array('text_direction' => $text_direction));
+	wp_die(sprintf(/*WP_I18N_NO_CONFIG*/'<p>Het lijkt erop dat er geen <code>wp-config.php</code> bestand is. Dit is nodig voor we kunnen starten.</p> <p>Meer hulp nodig? <a href=\'http://codex.wordpress.org/Editing_wp-config.php\'>Dat hebben we</a>.</p> <p>Je kunt een <code>wp-config.php</code>bestand maken met behulp van een web interface, maar dit werkt niet voor alle server setups. De veiligste manier is om het bestand handmatig te maken.</p><p><a href=\'%ssetup-config.php\' class=\'button\'>Maak een configuratiebestand</a></p>'/*/WP_I18N_NO_CONFIG*/, $path), /*WP_I18N_ERROR_TITLE*/'WordPress &rsaquo; Fout'/*/WP_I18N_ERROR_TITLE*/, array('text_direction' => $text_direction));
 
 }
 
