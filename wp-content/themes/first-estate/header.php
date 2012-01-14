@@ -4,11 +4,13 @@
 <html>
 
 <head>
+  <!-- META -->
 	<meta charset="<?php bloginfo('charset'); ?>" />
-	
 	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 	<title>
 		   <?php
@@ -31,6 +33,10 @@
 		   ?>
 	</title>
 	
+  <!-- JS -->
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
 	<link rel="shortcut icon" href="/favicon.ico">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
