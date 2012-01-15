@@ -35,7 +35,7 @@
 	
   <!-- JS -->
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="wp-content/themes/first-estate/js/libs/modernizr-2.0.6.min.js"></script>
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	

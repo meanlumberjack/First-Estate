@@ -72,12 +72,12 @@
   <!-- JS -->
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
   <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script> -->
-  <script src="js/scripts.js"></script>
+  <script src="wp-content/themes/first-estate/js/scripts.js"></script>
   
   <!--[if (lt IE 9) & (!IEMobile)]>
-  <script src="js/libs/respond.1.0.1.min.js"></script>
-  <script src="js/libs/selectivizr.1.0.2.min.js"></script>
-  <script src="js/libs/imgsizer.js"></script>
+  <script src="wp-content/themes/first-estate/js/libs/respond.1.0.1.min.js"></script>
+  <script src="wp-content/themes/first-estate/js/libs/selectivizr.1.0.2.min.js"></script>
+  <script src="wp-content/themes/first-estate/js/libs/imgsizer.js"></script>
   <![endif]-->
 
   <!--[if lt IE 7 ]>
