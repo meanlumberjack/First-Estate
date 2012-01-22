@@ -30,5 +30,45 @@
     		'after_title'   => '</h2>'
     	));
     }
+    
+	// Custom post type
+	add_action('init', 'portfolio_register');
+ 
+	function portfolio_register() {
+ 
+	$labels = array(
+		'name' => _x('Portfolio', 'post type general name'),
+		'singular_name' => _x('Portfolio item', 'post type singular name'),
+		'add_new' => _x('Nieuwe item', 'portfolio item'),
+		'add_new_item' => __('Voeg een nieuwe portfolio item toe'),
+		'edit_item' => __('Bewerk dit portfolio item'),
+		'new_item' => __('Nieuwe portfolio item'),
+		'view_item' => __('Bekijk portfolio item'),
+		'search_items' => __('Zoek portfolio'),
+		'not_found' =>  __('Niets gevonden'),
+		'not_found_in_trash' => __('Niets gevonden in prullenbak'),
+		'parent_item_colon' => ''
+	);
+ 
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+		'publicly_queryable' => true,
+		'show_ui' => true,
+		'query_var' => true,
+		'rewrite' => true,
+		'capability_type' => 'post',
+		'hierarchical' => false,
+		'menu_position' => null,
+		'supports' => array('title','editor','thumbnail')
+	  ); 
+ 
+	register_post_type( 'portfolio' , $args );
+	}
+
+	// Custom taxonomy
+	register_taxonomy("Categorieën", array("portfolio"), array("hierarchical" => true, "label" => "Categorieën", "singular_label" => "Categorie", "rewrite" => true));
+
+	// Custom meta boxes
 
 ?>
