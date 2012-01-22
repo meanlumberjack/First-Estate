@@ -69,6 +69,4 @@
 	// Custom taxonomy
 	register_taxonomy("Categorieën", array("portfolio"), array("hierarchical" => true, "label" => "Categorieën", "singular_label" => "Categorie", "rewrite" => true));
 
-	// Custom meta boxes
-
 ?>
