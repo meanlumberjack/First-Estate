@@ -35,11 +35,12 @@
 	
   <!-- JS -->
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="wp-content/themes/first-estate/js/libs/modernizr-2.0.6.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/modernizr-2.0.6.min.js"></script>
 
 	<link rel="shortcut icon" href="/favicon.ico">
 	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lobster+Two">
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
@@ -64,7 +65,7 @@
       <nav role="navigation" class="main_nav">
         <ul>
           <li class="multi-level">
-            <a href="#" title="Een overzicht van alle panden">Onze panden</a>
+            <a href="#" title="Een overzicht van aslle panden">Onze panden</a>
             <div class="sub_nav">
             <ul>
                 
@@ -75,9 +76,9 @@
             </ul>
             </div><!-- .sub_nav -->
           </li>
-          <li><a href="#" title="Een woordje over ons">Over ons</a></li>
-          <li><a href="#" title="Onze werkwijze">Expertise</a></li>
-          <li><a href="#" title="Contacteer ons">Contact</a></li>
+          <li><a href="<?php bloginfo('home'); ?>/over-ons" title="Een woordje over ons">Over ons</a></li>
+          <li><a href="<?php bloginfo('home'); ?>/expertise" title="Onze werkwijze">Expertise</a></li>
+          <li><a href="#contact" title="Contacteer ons">Contact</a></li>
         </ul>
       </nav>
      

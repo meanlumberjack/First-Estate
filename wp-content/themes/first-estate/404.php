@@ -1,7 +1,13 @@
 <?php get_header(); ?>
 
-	<h2>Error 404 - Page Not Found</h2>
+	<section id="content">
+		<div class="container">
+			<div class="grid_3">
 
-<?php get_sidebar(); ?>
+				<h3>Pagina niet gevonden</h3>
 
+			</div><!-- .grid_3 -->
+		</div><!-- .container -->
+	</section><!-- #content -->
+	
 <?php get_footer(); ?>

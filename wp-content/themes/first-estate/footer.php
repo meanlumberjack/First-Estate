@@ -3,8 +3,8 @@
     <div class="container">
         <div class="grid_1 connect">
           <h3>Blijf op de hoogte</h3>
-          <div class="rss icon"><a href="#">Via RSS</a> <small><a href="http://www.watisrss.com/">Wat is RSS?</a></small></div>
-          <div class="fb icon"><a href="#">Word fan op Facebook</a></div>
+          <div class="rss icon"><a href="#">Via RSS</a> <small><a href="http://www.gentblogt.be/info/wat-is-rss">Wat is RSS?</a></small></div>
+          <div class="fb icon"><a href="http://www.facebook.com/pages/FIRST-ESTATE/157532300982364">Word fan op Facebook</a></div>
 
           <div class="newsletter">
             <h4>Schrijf je in op onze nieuwsbrief</h4>
@@ -30,8 +30,8 @@
               </span><!-- .adr -->
             </div><!-- .address -->
 
-            <div class="contact_info">
-              <span class="tel icon"><a href="#">+32 475 71 50 10</a></span>
+            <div class="contact_info" id="contact">
+              <span class="tel icon">+32 475 71 50 10</span>
               <span class="email icon"><a href="mailto:alain@first-estate.be">alain@first-estate.be</a></span>
             </div><!-- .contact_info -->
           </span><!-- .vcard -->
@@ -59,10 +59,9 @@
         <!-- SECONDARY NAV -->
         <nav role="navigation" class="sec_nav right">
           <ul>         
-            <li><a href="#" title="Legaal">Legaal</a></li>
-            <li><a href="#" title="Veelgestelde vragen">Veelgestelde vragen</a></li>
+            <li><a href="<?php bloginfo('home'); ?>/legaal" title="Legaal">Legaal</a></li>
             <li><a href="#" title="Reeds verkocht/verhuurd">Reeds verkocht/verhuurd</a></li>
-            <li><a href="#" title="Over ons">Over ons</a></li>
+            <li><a href="<?php bloginfo('home'); ?>/over-ons" title="Over ons">Over ons</a></li>
           </ul>
         </nav>
   
@@ -72,12 +71,12 @@
   <!-- JS -->
   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
   <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script> -->
-  <script src="wp-content/themes/first-estate/js/scripts.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
   
   <!--[if (lt IE 9) & (!IEMobile)]>
-  <script src="wp-content/themes/first-estate/js/libs/respond.1.0.1.min.js"></script>
-  <script src="wp-content/themes/first-estate/js/libs/selectivizr.1.0.2.min.js"></script>
-  <script src="wp-content/themes/first-estate/js/libs/imgsizer.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/respond.1.0.1.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/selectivizr.1.0.2.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/js/libs/imgsizer.js"></script>
   <![endif]-->
 
   <!--[if lt IE 7 ]>

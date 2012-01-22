@@ -43,7 +43,7 @@
         <div class="grid_1 waardebepaling">
           <h3>Hoeveel is mijn huis waard?</h3>
           <p>De waarde van een huis hangt af van verschillende factoren. Mensen hebben nu eenmaal verschillende smaken, maar onze technische kennis zorgt voor een stabiele en realistische schatting.</p>
-          <span class="arrow"><a href="#">Benut onze expertise</a></span>
+          <span class="arrow"><a href="<?php bloginfo('home'); ?>/expertise">Benut onze expertise</a></span>
         </div>
         <div class="grid_1 quote">
           <h3>Wat onze klanten zeggen</h3>

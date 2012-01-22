@@ -62,7 +62,7 @@ a img { border: none; }
   position: relative;
   overflow: hidden;
 
-  /*background: rgba(255, 0, 0, .2);*/
+  background: rgba(255, 0, 0, .2);
 }
 
 .grid_1, .grid_2, .grid_3, .grid_full {
@@ -982,8 +982,26 @@ input[type="submit"]{
   right: 0;
 }
 
+/*  PAGES
+    ===========================================================  */
 
-
+/* LINKS */
+.page #content a,
+.page #content a:link,
+.page #content a:visited {
+  text-decoration: none;
+  color: #4978bc;
+  border-bottom: 1px solid #4978bc;
+}
+.page #content a:hover,
+.page #content a:focus {
+  color: #233773;
+  border-bottom: 1px solid #233773;
+}
+.page #content a:active {
+  position: relative;
+  top: 1px;
+}
 
 /*  MEDIA QUERIES 
     ===========================================================  */
