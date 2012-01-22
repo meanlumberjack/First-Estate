@@ -51,8 +51,8 @@
           <cite>Jeanine D'Hoore</cite>
         </div>
         <div class="grid_1 alain">
-          <h3>Over ons</h3>
           <img src="wp-includes/images/alain.png" alt="Alain Van Dael" class="right" />
+          <h3>Over ons</h3>
           <p>Wij bieden u een persoonlijke en optimale service!</p>
           <strong>Alain Van Dael</strong>
         </div>
