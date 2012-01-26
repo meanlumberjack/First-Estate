@@ -10,27 +10,27 @@
         <div class="flexslider">
           <ul class="slides">
             <li>
-              <a href="#"><img src="wp-includes/images/home_slides/01.jpg" /></a>
+              <a href="<?php bloginfo('home'); ?>/categorieen/huizen"><img src="wp-includes/images/home_slides/01.jpg" /></a>
               <div class="flex-caption">
                 <h3>Huizen te koop</h3>
                 <p>Ontdek ons verfijnd aanbod huizen binnen de vastgoedsector.</p>
-                <a href="#">Ontdek meer</a>
+                <a href="<?php bloginfo('home'); ?>/categorieen/huizen">Ontdek meer</a>
               </div>
             </li>
             <li>
-              <a href="#"><img src="wp-includes/images/home_slides/02.jpg" /></a>
+              <a href="<?php bloginfo('home'); ?>/categorieen/appartementen"><img src="wp-includes/images/home_slides/02.jpg" /></a>
               <div class="flex-caption">
                 <h3>Appartementen te koop</h3>
                 <p>Ontdek ons verfijnd aanbod appartementen binnen de vastgoedsector.</p>
-                <a href="#">Ontdek meer</a>
+                <a href="<?php bloginfo('home'); ?>/categorieen/appartementen">Ontdek meer</a>
               </div>
             </li>
             <li>
-              <a href="#"><img src="wp-includes/images/home_slides/03.jpg" /></a>
+              <a href="<?php bloginfo('home'); ?>/categorieen/reeds-verkocht"><img src="wp-includes/images/home_slides/03.jpg" /></a>
               <div class="flex-caption">
                 <h3>Reeds verkocht</h3>
                 <p>Bekijk de panden die wij op korte tijd met succes verkocht hebben.</p>
-                <a href="#">Ontdek meer</a>
+                <a href="<?php bloginfo('home'); ?>/categorieen/reeds-verkocht">Ontdek meer</a>
               </div>
             </li>
           </ul>

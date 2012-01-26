@@ -3,7 +3,7 @@
     <div class="container">
         <div class="grid_1 connect">
           <h3>Blijf op de hoogte</h3>
-          <div class="rss icon"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank">Via RSS</a> <small><a href="http://www.gentblogt.be/info/wat-is-rss">Wat is RSS?</a></small></div>
+          <div class="rss icon"><a href="<?php bloginfo('rss2_url'); ?>" target="_blank">Via RSS</a> <small><a href="http://www.gentblogt.be/info/wat-is-rss" target="_blank">Wat is RSS?</a></small></div>
           <div class="fb icon"><a href="http://www.facebook.com/pages/FIRST-ESTATE/157532300982364" target="_blank">Word fan op Facebook</a></div>
 
           <div class="newsletter">
@@ -60,7 +60,7 @@
         <nav role="navigation" class="sec_nav right">
           <ul>         
             <li><a href="<?php bloginfo('home'); ?>/legaal" title="Legaal">Legaal</a></li>
-            <li><a href="#" title="Reeds verkocht/verhuurd">Reeds verkocht/verhuurd</a></li>
+            <li><a href="<?php bloginfo('home'); ?>/categorieen/reeds-verkocht" title="Reeds verkocht/verhuurd">Reeds verkocht/verhuurd</a></li>
             <li><a href="<?php bloginfo('home'); ?>/over-ons" title="Over ons">Over ons</a></li>
           </ul>
         </nav>
