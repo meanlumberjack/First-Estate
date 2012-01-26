@@ -30,8 +30,10 @@
     		'after_title'   => '</h2>'
     	));
     }
-    
+  
 	// Custom post type
+	add_theme_support('post-thumbnails');
+	
 	add_action('init', 'portfolio_register');
  
 	function portfolio_register() {
@@ -67,6 +69,13 @@
 	}
 
 	// Custom taxonomy
-	register_taxonomy("Categorieën", array("portfolio"), array("hierarchical" => true, "label" => "Categorieën", "singular_label" => "Categorie", "rewrite" => true));
+	register_taxonomy("categorieen", array("portfolio"), array("hierarchical" => true, "label" => "Categorieën", "singular_label" => "Categorie", "rewrite" => true));
 
+	// RSS
+	function myfeed_request($portfolioRSS) {
+	if (isset($portfolioRSS['feed']) && !isset($portfolioRSS['post_type']))
+		$portfolioRSS['post_type'] = array('portfolio');
+		return $portfolioRSS;
+	}
+	add_filter('request', 'myfeed_request');
 ?>

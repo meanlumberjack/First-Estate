@@ -17,7 +17,7 @@
 		      if (function_exists('is_tag') && is_tag()) {
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
-		         wp_title(''); echo ' Archive - '; }
+		         wp_title(''); echo ' - '; }
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
@@ -68,11 +68,16 @@
             <a href="#" title="Een overzicht van aslle panden">Onze panden</a>
             <div class="sub_nav">
             <ul>
-                
-                <li><a href="#" title="Een overzicht van alle huizen">Alle huizen</a></li>
-                <li><a href="#"title="Een overzicht van alle appartementen">Appartementen</a></li>
-                <li><a href="#"title="Een overzicht van de reeds verkochte panden">Reeds verkocht</a></li>
-              
+            	<?php
+								$args_list = array(
+									'taxonomy' => 'categorieen', // Registered tax name
+									'show_count' => false,
+									'hierarchical' => true,
+									'echo' => '0',
+									'title_li' => '',
+								);	 
+								echo wp_list_categories($args_list);
+							?>
             </ul>
             </div><!-- .sub_nav -->
           </li>
