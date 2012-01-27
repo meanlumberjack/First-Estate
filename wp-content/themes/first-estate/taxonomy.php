@@ -1,6 +1,16 @@
 <?php get_header(); ?>
   
-
+  <script src="<?php bloginfo('template_url'); ?>/js/masonry.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      //$('#masonry').masonry({ singleMode: true });
+      $('#masonry').imagesLoaded( function(){
+        $('#masonry').masonry({
+            itemSelector : '.grid_1'
+         });
+      });
+    });
+  </script>
 
 	<section id="content">
 		<div class="container">

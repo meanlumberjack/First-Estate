@@ -62,7 +62,7 @@ a img { border: none; }
   position: relative;
   overflow: hidden;
 
-  /*background: rgba(255, 0, 0, .2);*/
+  background: rgba(255, 0, 0, .2);
 }
 
 .grid_1, .grid_2, .grid_3, .grid_full {
@@ -931,6 +931,19 @@ input[type="submit"]{
 /* ********** 
    OVERVIEW
    ********** */
+.overview .grid_1 {
+  width: 31% !important;
+  /*width: 300px !important;*/
+}
+@media screen and (max-width: 640px) {
+.overview .grid_1 {
+  width: 100% !important;
+}
+}
+
+.overview .pand {
+  margin-bottom: 42px;
+}
 .overview .pand h3 {
   font-size: 14px;
   margin-bottom: 0;
@@ -949,7 +962,7 @@ input[type="submit"]{
   width: 113px; /* 143 */
   height: 29px; /* 40 */
   padding: 11px 0 0 30px;
-
+  margin-left: 21px;
   background: transparent url(images/home_caption_btn.png) no-repeat;
 
   color: rgba(255,255,255,1); 
@@ -972,15 +985,112 @@ input[type="submit"]{
   }
 
 .pand .img_container {
-  background: red;
   position: relative;
+  background: #fff9f2 url(images/pattern_light.jpg) repeat;
+  border: 1px solid #ccc3b2; 
+  padding: 2% 2% 0 2%; /* 6 / 300 */
+  margin-bottom: 21px;
+
+  transition: box-shadow .2s ease; 
+  -webkit-transition: box-shadow .2s ease; 
+  -moz-transition: box-shadow .2s ease; 
 }
-.pand .img_container .caption{
-  background: green;
+  .pand .img_container a {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 100%;
+    /*width: 95.333333333333%;*/ /* 286 / 300 */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+  }
+    /* CAPTION */
+    .pand .img_container a .caption{
+      margin: 0;
+      background: transparent url(images/overview_caption_bg.png) no-repeat;
+      width: 72px; /* 92 - 20 */
+      height: 76px;
+      padding: 10px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      right: 15%; /* 45 / 300 */
+      color: #fff; 
+      text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+    }
+      .pand .img_container a .caption h3{
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+        font-size: 21px;
+        line-height: 30px;
+        /*margin: 4.761904761905% 0;*/ /* 14 / 294 */
+        margin-bottom: 3px;
+        text-align: center;
+      }
+      .pand .img_container a .caption p {
+        font-size: 14px;
+        text-align: center;
+      }
+
+      /* TE KOOP */
+      .koop .caption { background-position: top left; }
+      .koop .caption h3 { color: #8cbde6; }
+
+      /* TE HUUR */
+      .huur .caption { background-position: top right !important; }
+      .huur .caption h3 { color: #2a2721; text-shadow: none; }
+
+
+.pand .img_container:before {
+  z-index: -2;
   position: absolute;
-  top: 0;
-  right: 0;
+  background: transparent;
+  width: 50%;
+  height: 50%;
+  content: "";
+  left: 45px;
+  bottom: 10px;
+  
+  transform:          skew(-15deg) rotate(-5deg);
+  -webkit-transform:  skew(-15deg) rotate(-5deg);
+  -moz-transform:     skew(-15deg) rotate(-5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.pand .img_container:after {
+  z-index: -1;
+  position: absolute;
+  background: transparent;
+  width: 50%;
+  height: 50%;
+  content: "";
+  right: 45px;
+  bottom: 10px;
+  
+  transform:          skew(15deg) rotate(5deg);
+  -webkit-transform:  skew(15deg) rotate(5deg);
+  -moz-transform:     skew(15deg) rotate(5deg);
+  
+  box-shadow:         0 8px 16px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ANIMATION */
+.pand .img_container:hover { 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -webkit-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  -moz-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/*
+.pand .img_container:hover:before,
+.pand .img_container:hover:after { display: none; }
+*/
 
 /*  PAGES
     ===========================================================  */
@@ -1002,6 +1112,9 @@ input[type="submit"]{
   position: relative;
   top: 1px;
 }
+
+
+
 
 /*  MEDIA QUERIES 
     ===========================================================  */
