@@ -1,8 +1,10 @@
 <?php get_header(); ?>
+  
+
 
 	<section id="content">
 		<div class="container">
-      <section class="cf main_details clear overview">
+      <section class="cf main_details clear overview" id="masonry">
 				
 				<?php if (have_posts()) : ?>
 
