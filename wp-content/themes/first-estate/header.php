@@ -65,7 +65,7 @@
       <nav role="navigation" class="main_nav">
         <ul>
           <li class="multi-level">
-            <a href="#" title="Een overzicht van aslle panden">Onze panden</a>
+            <a href="#" title="Een overzicht van alle panden">Onze panden</a>
             <div class="sub_nav">
             <ul>
             	<?php
