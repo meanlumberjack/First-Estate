@@ -14,10 +14,8 @@
 	<section id="content">
 		<div class="container">
 		
-		<?php query_posts(array('post_type'=>'portfolio')); ?>
-		
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		
+			
 			<section class="cf main_details clear">
       <div class="grid_1 summary">
         <h3><?php the_title(); ?></h3>
@@ -34,8 +32,7 @@
         </div><!-- .contact -->
       </div><!-- .summary -->
       
-
-<!-- SLIDER -->
+      <!-- SLIDER -->
       <div class="grid_2">
         <div class="slider_container">
           <div class="flexslider">
@@ -55,10 +52,9 @@
           </div><!-- .flexslider -->
         </div><!-- .slider_container -->
       </div>
-
-</section>
-
-<!-- BLOCKS --> 
+			</section>
+			
+			<!-- BLOCKS --> 
       <section class="cf blocks">
         <div class="grid_1 map">
           <h3>Details</h3>
@@ -73,8 +69,8 @@
           <?php echo $opsomming ?>
          </div>
       </section>
-      
-      <?php endwhile; endif; ?>
+			
+		<?php endwhile; endif; ?>
 		
 		</div><!-- .container -->
 	</section><!-- #content -->
