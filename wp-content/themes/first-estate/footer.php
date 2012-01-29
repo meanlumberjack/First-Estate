@@ -25,8 +25,8 @@
             <div class="address">
               <span class="fn org">First-Estate</span> <br />
               <span class="adr">
-                <span class="street-address">Schalmei 11</span> <br />
-                <span class="postal-code">2970</span> <span class="locality">&rsquo;s Gravenwezel</span> <br />
+                <span class="street-address">Turnhoutsebaan 21</span> <br />
+                <span class="postal-code">2970</span> <span class="locality">&rsquo;Schilde</span> <br />
               </span><!-- .adr -->
             </div><!-- .address -->
 
