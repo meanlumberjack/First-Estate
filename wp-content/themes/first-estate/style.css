@@ -867,7 +867,14 @@ input[type="submit"]{
         top: -18px;
         left: 23.666666666667%; /* 71 / 300 / */
       }
+      a.share_mail_btn { 
+        /*background: rgba(0, 255, 0, .5);*/ 
+        display: inline-block;
+        width: 56px;
+        height: 20px;
+      }
       a.share_mail_btn img { margin-bottom: -4px; }
+      
 
 /* BLOCKS */
 .single .blocks {
@@ -936,6 +943,15 @@ input[type="submit"]{
   width: 31% !important;
   /*width: 300px !important;*/
 }
+
+.overview .grid_1 {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  /*background: rgba(0, 255, 0, .2);*/
+}
+
+
 @media screen and (max-width: 640px) {
 .overview .grid_1 {
   width: 100% !important;

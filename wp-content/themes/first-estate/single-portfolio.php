@@ -28,9 +28,9 @@
             <span class="tel icon">+32 475 71 50 10</span>
             <span class="email icon"><a href="mailto:alain@first-estate.be">alain@first-estate.be</a></span>
             <span class="share">
-              Share: 
-              <a class="share_mail_btn" href="mailto:?subject=<?php the_title('','',true); ?> (via first-estate.be)&body=<?php echo strip_tags($beschrijving) ?>%0D%0D<?php the_permalink(); ?>" title="Verstuur dit pand via email" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/share_mail_btn.png" alt="Mail"></a>
-              <div class="fb-send" data-href="<?php echo urlencode(get_permalink($post->ID)); ?>" data-font="lucida grande"></div>
+              Share:
+              <a class="share_mail_btn" href="mailto:?subject=<?php the_title('','',true); ?> (via first-estate.be)&body=<?php echo strip_tags($beschrijving) ?>%0D%0D<?php the_permalink(); ?>" title="Verstuur dit pand via email" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/share_mail_btn.png" width="56" height="20" alt="Mail"></a>
+              <div class="fb-like" data-href="<?php echo urlencode(get_permalink($post->ID)); ?>" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="lucida grande"></div>
             </span>
         </div><!-- .contact -->
       </div><!-- .summary -->
