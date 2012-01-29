@@ -62,7 +62,7 @@ a img { border: none; }
   position: relative;
   overflow: hidden;
 
-  background: rgba(255, 0, 0, .2);
+  /*background: rgba(255, 0, 0, .2);*/
 }
 
 .grid_1, .grid_2, .grid_3, .grid_full {
@@ -81,9 +81,9 @@ a img { border: none; }
 .grid_right { float: right; }
 
 
-.grid_1     { background: rgba(0, 255, 0, .2); }
+/*.grid_1     { background: rgba(0, 255, 0, .2); }
 .grid_2     { background: rgba(255, 0, 0, .2); }
-.grid_3     { background: rgba(0, 0, 255, .2); }
+.grid_3     { background: rgba(0, 0, 255, .2); }*/
 
 
 /* Use as necessary for nested content. Also use percents here for fluidity. */
@@ -867,6 +867,7 @@ input[type="submit"]{
         top: -18px;
         left: 23.666666666667%; /* 71 / 300 / */
       }
+      a.share_mail_btn img { margin-bottom: -4px; }
 
 /* BLOCKS */
 .single .blocks {

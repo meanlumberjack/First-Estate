@@ -11,6 +11,29 @@
       });
     });
   </script>
+    
+  <script type="text/javascript">
+    //HIGHLIGHT
+    $(function() {
+
+      $(".overview").mouseenter(function() {   
+
+        $(".pand").mouseenter(function() {   
+          $(this).css({ opacity: 1 });
+          $(this).siblings().css({ opacity: 0.5 });
+          //$(this).fadeTo('slow', 1);
+        }).mouseleave(function() {  
+          $(this).css({ opacity: 0.5 });
+          //$(this).fadeTo('slow', 0.5);
+        });
+
+      }).mouseleave(function() {
+        //$(this).children().fadeTo('slow', 1);
+        $(this).children().css({ opacity: 1 });
+      });
+
+    });
+  </script>
 
 	<section id="content">
 		<div class="container">
