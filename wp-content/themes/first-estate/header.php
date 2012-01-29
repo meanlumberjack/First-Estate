@@ -75,7 +75,7 @@
       <nav role="navigation" class="main_nav">
         <ul>
           <li class="multi-level">
-            <a href="#" title="Een overzicht van alle panden">Onze panden</a>
+            <a href="<?php bloginfo('home'); ?>/categorieen/all" title="Een overzicht van alle panden">Onze panden</a>
             <div class="sub_nav">
             <ul>
             	<?php
@@ -85,6 +85,9 @@
 									'hierarchical' => true,
 									'echo' => '0',
 									'title_li' => '',
+									'parent' => '',
+									'hide_empty' =>'0',
+									'child_of' => '7',
 								);	 
 								echo wp_list_categories($args_list);
 							?>
