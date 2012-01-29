@@ -19,9 +19,6 @@
 			<section class="cf main_details clear">
       <div class="grid_1 summary">
         <h3><?php the_title(); ?></h3>
-        <h4>
-        	<?php echo $adres ?> <?php echo $nummer ?>, <?php echo $gemeente ?>
-        </h4>
         <?php echo $opsomming ?>
         <div class="contact">
           <h5>Contacteer ons voor een afspraak</h5>
