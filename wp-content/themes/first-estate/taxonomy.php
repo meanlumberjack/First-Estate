@@ -62,6 +62,7 @@
                 </a>
               </div><!-- .img_container -->
               <h3><?php the_title(); ?></h3>
+              <h4><?php the_field('adres'); ?> <?php the_field('nummer'); ?>, <?php the_field('gemeente'); ?></h4>
               <p><?php the_field('beschrijving'); ?></p>
               <a href="<?php the_permalink() ?>" class="btn">Bekijk dit pand</a>
             </div><!-- .pand .koop -->
