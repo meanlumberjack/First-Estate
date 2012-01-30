@@ -74,9 +74,19 @@
   					<h3>Niets gevonden</h3>
 
 				<?php endif; ?>
-      
+        
       </section>
 		</div><!-- .container -->
 	</section><!-- #content -->
+
+  <div class="container pagination_container">
+    <div class="grid_3 pagination">
+      <?php 
+          if ( function_exists( 'wp_pagenavi' ) ) {
+            wp_pagenavi();
+          }
+        ?>
+    </div><!-- .pagination -->
+  </div>
 
 <?php get_footer(); ?>

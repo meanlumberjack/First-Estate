@@ -83,4 +83,9 @@
 	if (function_exists('add_image_size')) { 
 		add_image_size('large', 606, 455, true);
 	}
+
+
+
+
+
 ?>

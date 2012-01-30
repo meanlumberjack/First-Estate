@@ -1,0 +1,43 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+	clear: both;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+	text-decoration: none;
+	padding: 3px 5px;
+	margin: 2px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+	
+}
+
+.wp-pagenavi span.current {
+	font-weight: bold;
+}
+
+
+
+/* LINKS */
+    .wp-pagenavi a,
+    .wp-pagenavi a:link,
+    .wp-pagenavi a:visited {
+      text-decoration: none;
+      color: #4978bc;
+      border-bottom: 1px solid #4978bc;
+    }
+    .wp-pagenavi a:hover,
+    .wp-pagenavi a:focus {
+      color: #233773;
+      border-bottom: 1px solid #233773;
+    }
+    .wp-pagenavi a:active {
+      position: relative;
+      top: 1px;
+    }
