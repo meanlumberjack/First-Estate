@@ -7,6 +7,7 @@
 	$prijs = get_field('prijs');
 	$beschrijving = get_field('beschrijving');
 	$opsomming = get_field('opsomming');
+	$map = get_field('map');
 ?>
 
 <?php get_header(); ?>
@@ -62,15 +63,12 @@
         <div class="grid_1 map">
           <h3>Details</h3>
           <div class="iframe_container">
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=schalmei+11+2970&amp;aq=&amp;ie=UTF8&amp;hq=&amp;hnear=Schalmei+11,+2970+Schilde,+Antwerpen,+Vlaams+Gewest,+Belgium&amp;t=m&amp;vpsrc=6&amp;ll=51.265621,4.581299&amp;spn=0.018797,0.036478&amp;z=14&amp;output=embed&amp;iwloc=near"></iframe>
+          	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo $map ?>&amp;output=embed&iwloc=near"></iframe>
           </div><!-- .iframe_container -->
         </div>
-        <div class="grid_1 extra_info">
-          <p><?php echo $beschrijving ?></p>
+        <div class="grid_2 extra_info">
+          <?php echo $beschrijving ?>
         </div>
-        <div class="grid_1 list">
-          <?php echo $opsomming ?>
-         </div>
       </section>
 			
 		<?php endwhile; endif; ?>
