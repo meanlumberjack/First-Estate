@@ -63,7 +63,12 @@
         <div class="grid_1 map">
           <h3>Details</h3>
           <div class="iframe_container">
-          	<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo $map ?>&amp;output=embed&iwloc=near"></iframe>
+						<?php if ($map == '') { ?>
+							<blockquote>Voor al mijn vragen kan ik steeds terrecht bij First Estate, overdag tijdens kantooruren en zelfs tijdens het weekend. Dit is pas echte service!</blockquote>
+							<cite>Jeanine D'Hoore</cite>
+						<?php } else { ?>
+							<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="<?php echo $map ?>&amp;output=embed&iwloc=near"></iframe>
+						<?php } ?>
           </div><!-- .iframe_container -->
         </div>
         <div class="grid_2 extra_info">

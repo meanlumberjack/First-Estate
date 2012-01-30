@@ -13,7 +13,7 @@
               <input type="email" name="email" id="email" placeholder="Emailadres" />
               <input type="submit" name="submit" value="Inschrijven" />
             </form>
-            <p>Blijf op de hoogte van de nieuwste panden via een maandelijkse email.</p>
+            <p>Blijf op de hoogte van de nieuwste panden via een automatische email.</p>
           </div><!-- .newsletter -->
         </div><!-- .connect -->
 
@@ -26,7 +26,7 @@
               <span class="fn org">First-Estate</span> <br />
               <span class="adr">
                 <span class="street-address">Turnhoutsebaan 21</span> <br />
-                <span class="postal-code">2970</span> <span class="locality">&rsquo;Schilde</span> <br />
+                <span class="postal-code">2970</span> <span class="locality">Schilde</span> <br />
               </span><!-- .adr -->
             </div><!-- .address -->
 
