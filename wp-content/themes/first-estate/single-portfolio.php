@@ -20,9 +20,11 @@
 			<section class="cf main_details clear">
       <div class="grid_1 summary">
         
-         <div class="reeds_verkocht">
-          Verkocht na 2 weken!
-        </div>
+         <?php if ($type == "Verkocht") :?>
+          <div class="reeds_verkocht">
+           Verkocht na 2 weken!
+          </div>
+        <?php endif; ?>
 
         <h3><?php the_title(); ?></h3>
         <h4>
