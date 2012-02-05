@@ -19,6 +19,11 @@
 			
 			<section class="cf main_details clear">
       <div class="grid_1 summary">
+        
+         <div class="reeds_verkocht">
+          Verkocht na 2 weken!
+        </div>
+
         <h3><?php the_title(); ?></h3>
         <h4>
         	<?php echo $adres ?> <?php echo $nummer ?> <?php echo $gemeente ?>
